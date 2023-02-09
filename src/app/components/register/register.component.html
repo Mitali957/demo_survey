@@ -1,3 +1,4 @@
+<div class="container">
 <form [formGroup] ="registerForm" (ngSubmit)="registerSubmitted()" 
 class="border p-3 rounded-3">
     <div class = "row g-0">
@@ -42,7 +43,7 @@ class="border p-3 rounded-3">
         
     </div>
         <div class="col mb-3">
-            <label for="rpwd" class="form-label"> Repeat Password</label>
+            <label for="rpwd" class="form-label"> Confirm Password</label>
             <input type="password" class="form-control" id="rpwd"
             formControlName = "rpwd">
             <div class="form-text"></div>
@@ -55,4 +56,9 @@ class="border p-3 rounded-3">
             </div>
         </div>
     </div>
+    <div class="signin">
+        <p>Don't have an account? <a routerLink="/signin"> Login </a> </p>
+         
+     </div>
 </form>
+</div>

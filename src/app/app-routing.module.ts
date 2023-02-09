@@ -4,9 +4,14 @@ import { RegisterComponent } from './components/register/register.component';
 import { SigninComponent } from './components/signin/signin.component';
 
 const routes: Routes = [
-  {path:'',pathMatch: 'full', redirectTo: 'signin'},
+  // {path:'',pathMatch: 'full', redirectTo: '/signin'},
   {path:'signin',component: SigninComponent},
-  {path:'register',component: RegisterComponent},];
+  {path:'register',component: RegisterComponent},
+
+  {
+    path:'',redirectTo: '/signin',pathMatch: 'full'
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
