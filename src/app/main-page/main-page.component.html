@@ -1,1 +1,65 @@
-<p>main-page works!</p>
+<!-- <div id="container">
+    <div class="page1">
+        <div cdkDropListGroup>
+        <div class="example-container">
+            <h2>To do</h2>
+        
+            <div
+              cdkDropList
+              [cdkDropListData]="todo"
+              class="example-list"
+              (cdkDropListDropped)="drop($event)">
+              <div class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+
+    <div class="page2">
+        <div cdkDropListGroup>
+        <div class="example-container">
+        <h2>Done</h2>
+    
+        <div
+          cdkDropList
+          [cdkDropListData]="done"
+          class="example-list"
+          (cdkDropListDropped)="drop($event)">
+          <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+        </div>
+      </div>
+    </div>
+</div>
+</div> -->
+
+
+
+
+
+<div cdkDropListGroup>
+    <div class="example-container">
+      <h2>components</h2>
+  
+      <div
+        cdkDropList
+        [cdkDropListData]="components"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of components" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+  
+    <div class="example-container">
+      <h2>Form</h2>
+  
+      <div
+        cdkDropList
+        [cdkDropListData]="Form"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of Form" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+  </div>

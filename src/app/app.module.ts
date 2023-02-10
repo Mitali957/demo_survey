@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +22,9 @@ import { MainPageComponent } from './main-page/main-page.component';
     AppRoutingModule,
     BrowserModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    DragDropModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
