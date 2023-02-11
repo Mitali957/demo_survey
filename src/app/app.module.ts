@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import {DragDropModule} from '@angular/cdk/drag-drop';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +24,7 @@ import { MainPageComponent } from './main-page/main-page.component';
     ReactiveFormsModule,
     FormsModule,
     DragDropModule,
-   
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
