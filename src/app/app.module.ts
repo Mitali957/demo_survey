@@ -4,19 +4,24 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
-
+// import { SurveyComponent } from './survey/survey.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { SurveyModule } from './survey/survey.module';
+import { MatCardModule } from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     SigninComponent,
-    MainPageComponent
+    MainPageComponent,
+  
+    
   ],
   imports: [
     AppRoutingModule,
@@ -24,8 +29,12 @@ import { MainPageComponent } from './main-page/main-page.component';
     ReactiveFormsModule,
     FormsModule,
     DragDropModule,
+    SurveyModule,
+    MatCardModule,
+    MatButtonModule
    
   ],
+  exports:[],
   providers: [],
   bootstrap: [AppComponent]
 })
