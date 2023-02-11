@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 
-// import { SurveyComponent } from './survey/survey.component';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -29,9 +29,6 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     FormsModule,
     DragDropModule,
-    SurveyModule,
-    MatCardModule,
-    MatButtonModule
    
   ],
   exports:[],
